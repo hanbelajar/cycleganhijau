@@ -5,6 +5,119 @@ import numpy as np
 from PIL import Image
 import io
 
+
+
+
+# Add CSS styling
+st.markdown("""
+    <style>
+        /* General styling */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Title and subtitle */
+        .title {
+            color: #1e3d58;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #3e5c73;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Sidebar styling */
+        .sidebar .sidebar-content {
+            background-color: #e0f7fa;
+            color: #00796b;
+        }
+
+        .sidebar .sidebar-header {
+            background-color: #00796b;
+            color: white;
+        }
+
+        /* Buttons Styling */
+        .stButton button {
+            background-color: #00796b;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            box-shadow: none;
+            transition: background-color 0.3s ease, outline 0.3s ease;
+        }
+
+        .stButton button:hover {
+            background-color: #004d40;
+            outline: 2px solid black;  /* Black outline on hover */
+        }
+
+        /* Image styling */
+        .stImage {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* subtle shadow for images */
+        }
+
+        /* Styling for download buttons */
+        .stDownloadButton button {
+            background-color: #009688;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, outline 0.3s ease;
+        }
+
+        .stDownloadButton button:hover {
+            background-color: #00796b;  /* Darker shade of green for hover */
+            outline: 2px solid black;  /* Black outline on hover */
+        }
+
+        /* Consistent padding and margins for containers */
+        .stColumn {
+            padding: 10px;
+        }
+
+        /* Section headers */
+        .section-header {
+            color: #004d40;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* File uploader styling */
+        .stFileUploader {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        /* Images grid styling */
+        .stImageGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        /* Banner image styling */
+        .stBannerImage {
+            border-radius: 10px;
+            border: 2px solid #004d40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # Load CycleGAN model weights
 @st.cache_resource
 def load_cycle_gan_model(weight_file):
@@ -147,3 +260,33 @@ if __name__ == "__main__":
     #     """,
     #     unsafe_allow_html=True
     # )
+
+    # Add external link at the bottom with soft and elegant styling
+# Add external link at the bottom with soft and elegant styling
+st.markdown(
+    """
+    ---
+    <div style="display: flex; justify-content: flex-end; align-items: center; padding: 20px 0; gap: 10px;">
+        <a href="https://stylecoklatkuningbatikbali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
+            <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Coklat Kuning
+        </a>
+        <a href="https://stylebirubatikbali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
+            <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Biru
+        </a>
+        <a href="https://cycleganbatikmadurabali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
+            <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Merah
+        </a>
+        <a href="https://stylehijaubatikbali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
+            <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Hijau
+        </a>
+    </div>
+    <style>
+        a:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+            background-color: #D1D1D1;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
