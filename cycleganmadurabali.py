@@ -273,7 +273,7 @@ st.markdown(
         <a href="https://stylebirubatikbali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
             <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Biru
         </a>
-        <a href="https://cycleganbatikmadurabali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
+        <a href="https://stylebalimerah.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
             <img src="https://img.icons8.com/ios-filled/50/333333/link.png" width="15" style="margin-right: 6px;"/> Style Batik Bali Merah
         </a>
         <a href="https://stylehijaubatikbali.streamlit.app/" target="_blank" style="text-decoration: none; font-size: 14px; color: #333333; font-weight: 400; background-color: #EAEAEA; padding: 5px 12px; border-radius: 8px; box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05); display: flex; align-items: center; transition: all 0.3s ease;">
